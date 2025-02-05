@@ -44,6 +44,10 @@ docker-compose down
 
 ## 🗄️ Database
 
+To configure the AWS DynamoDB
+
+AWS configure
+
 This repository uses **DynamoDB** as the database engine.
 
 ---
