@@ -1,6 +1,7 @@
+
 # 🚀 Morrison Vision
 
-Welcome to the Morrison Vision frontend repository! This guide will help you set up and run the project locally.
+Welcome to the **Morrison Vision** frontend repository! This guide will help you set up and run the project locally.
 
 ---
 
@@ -11,6 +12,38 @@ Before getting started, make sure you have the following installed:
 - **Node.js**: Version `17.x` or higher
 - **pnpm**: A fast and efficient package manager
 
-If you don’t have `pnpm`, install it globally using:
+### Installing `pnpm`
+
+If you don’t have `pnpm`, install it globally using the following command:
+
 ```bash
 npm install -g pnpm
+```
+
+---
+
+## 🛠️ Running with Docker
+
+To run the project locally with Docker, follow these commands:
+
+### Start Docker
+
+```bash
+docker-compose up
+```
+
+This will bring up the necessary services for the project, including DynamoDB.
+
+### Stop Docker
+
+```bash
+docker-compose down
+```
+
+---
+
+## 🗄️ Database
+
+This repository uses **DynamoDB** as the database engine.
+
+---
