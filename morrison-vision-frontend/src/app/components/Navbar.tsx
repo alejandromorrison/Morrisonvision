@@ -31,8 +31,9 @@ const Navbar = () => {
             {/* Dropdown de Servicios (solo en desktop) */}
 
 
-            <Link href="/nuestro-portafolio-inmersivo" className="hover:text-blue-600">Nuestro Portafolio</Link>
+            <Link href="/galeria" className="hover:text-blue-600">Galeria</Link>
             <Link href="/equipo" className="hover:text-blue-600">Equipo</Link>
+            <Link href="/preguntas-frecuentes" className="hover:text-blue-600">Preguntas Frecuentes</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -54,7 +55,7 @@ const Navbar = () => {
           className="md:hidden bg-white shadow-md"
         >
           <Link href="/" className="block px-4 py-3 border-b">Inicio</Link>
-          <Link href="/nuestro-portafolio-inmersivo" className="block px-4 py-3 border-b">Nuestro Portafolio</Link>
+          <Link href="/galeria" className="block px-4 py-3 border-b">Galeria</Link>
           <Link href="/equipo" className="block px-4 py-3 border-b">Equipo</Link>
         </motion.div>
       )}

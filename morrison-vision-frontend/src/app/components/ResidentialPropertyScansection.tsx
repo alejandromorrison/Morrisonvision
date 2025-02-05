@@ -48,9 +48,9 @@ const ResidentialPropertyScanSection = () => {
         {/* Llamado a la acción */}
         <div className="text-center">
           <Link href="/escaneo-residencial" passHref>
-            <button className="px-8 py-4 bg-yellow-500 text-black text-xl font-semibold rounded-lg hover:bg-yellow-600 transition duration-300">
+            {/* <button className="px-8 py-4 bg-yellow-500 text-black text-xl font-semibold rounded-lg hover:bg-yellow-600 transition duration-300">
               Descubre más sobre nuestros escaneos
-            </button>
+            </button> */}
           </Link>
         </div>
       </div>

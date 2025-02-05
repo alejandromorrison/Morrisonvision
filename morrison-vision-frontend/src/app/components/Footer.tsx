@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             {/* <a href="#" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-gray-400">
                 <i>LinkedIn</i>
             </a> */}
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-gray-400">
+            <a href="https://www.instagram.com/morrisonvisiondo?igsh=OWIwYXQzbXdiYjFn" target="_blank" rel="noopener noreferrer" className="text-xl hover:text-gray-400">
                 <i>Instagram</i>
             </a>
         </div>

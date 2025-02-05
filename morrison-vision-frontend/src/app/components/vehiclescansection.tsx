@@ -16,9 +16,9 @@ const VehicleScanSection = () => {
 
         {/* Botón para redirigir a la página de escaneos de vehículos inmersivos */}
         <Link href="/visualizacion-inmersiva-vehiculos" passHref>
-          <button className="px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition duration-300">
+          {/* <button className="px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition duration-300">
             Ver mas
-          </button>
+          </button> */}
         </Link>
       </div>
 

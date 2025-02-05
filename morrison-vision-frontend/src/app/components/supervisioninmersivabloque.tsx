@@ -46,9 +46,9 @@ const ImmersiveSupervisionBlock = () => {
           Supervisa tu construcción como nunca antes, con la precisión y claridad que solo la inmersión virtual puede ofrecer.
         </p>
 
-        <Link href="/contacto" className="inline-block px-8 py-4 text-lg font-semibold text-white bg-orange-500 hover:bg-orange-600 rounded-lg transition-all duration-300 transform hover:scale-105">
+        {/* <Link href="/contacto" className="inline-block px-8 py-4 text-lg font-semibold text-white bg-orange-500 hover:bg-orange-600 rounded-lg transition-all duration-300 transform hover:scale-105">
           Contáctanos para más información
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
