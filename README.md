@@ -44,13 +44,17 @@ docker-compose down
 
 ## 🗄️ Database
 
+to run the AWS configure you must need to download the AWS CLI V2
+
+https://awscli.amazonaws.com/
+
 To configure the AWS DynamoDB
 
 AWS configure
 
-Access Key: fakeMyKeyId
-Secret Access Key: fakeSecretAccessKey
-Region: us-east-1
+Access Key: fakeMyKeyId <br>
+Secret Access Key: fakeSecretAccessKey <br>
+Region: us-west-2
 
 This repository uses **DynamoDB** as the database engine.
 
