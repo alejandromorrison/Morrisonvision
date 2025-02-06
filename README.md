@@ -44,6 +44,14 @@ docker-compose down
 
 ## 🗄️ Database
 
+To configure the AWS DynamoDB
+
+AWS configure
+
+Access Key: fakeMyKeyId
+Secret Access Key: fakeSecretAccessKey
+Region: us-east-1
+
 This repository uses **DynamoDB** as the database engine.
 
 ---
