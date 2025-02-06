@@ -3,10 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Node.js Starter App</title>
+  <title>Users Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, Node.js!</h1>
-  <p>This is a simple Node.js starter template.</p>
+  <h1>Users</h1>
+  <table id="usersTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Access Level</th>
+        <th>Email</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data will be dynamically inserted here -->
+    </tbody>
+  </table>
+
+  <script>
+    async function fetchUsers() {
+      try {
+        const response = await fetch("http://localhost:3002/users");
+        const users = await response.json();
+
+        const tableBody = document.getElementById("usersTable").querySelector("tbody");
+        users.forEach(user => {
+          const row = document.createElement("tr");
+
+          const idCell = document.createElement("td");
+          idCell.textContent = user.id;
+          row.appendChild(idCell);
+
+          const usernameCell = document.createElement("td");
+          usernameCell.textContent = user.username;
+          row.appendChild(usernameCell);
+
+          const accessLevelCell = document.createElement("td");
+          accessLevelCell.textContent = user.accesslevel;
+          row.appendChild(accessLevelCell);
+
+          const emailCell = document.createElement("td");
+          emailCell.textContent = user.email;
+          row.appendChild(emailCell);
+
+          const createdAtCell = document.createElement("td");
+          createdAtCell.textContent = new Date(user.createdAt).toLocaleString();
+          row.appendChild(createdAtCell);
+
+          tableBody.appendChild(row);
+        });
+      } catch (error) {
+        console.error("Error fetching users:", error);
+      }
+    }
+
+    // Fetch users when the page loads
+    window.onload = fetchUsers;
+  </script>
 </body>
 </html>
