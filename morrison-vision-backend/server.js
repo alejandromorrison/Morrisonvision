@@ -2,38 +2,25 @@ const express = require('express');
 const path = require('path');
 const { ScanCommand } = require('@aws-sdk/client-dynamodb');
 const dbClient = require('./db/dbClient'); // Make sure this file points to your DynamoDB client setup
+const formsrequest = require('./routes/formsreqs');
 
 const app = express();
 const PORT = process.env.PORT || 3002;
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.json())
+
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Users route to fetch data from DynamoDB
-app.get('/users', async (req, res) => {
-    try {
-        const command = new ScanCommand({ TableName: 'UsersTable' });
-        const response = await dbClient.send(command);
+// using the forms request route
+app.use('/formsreqs', formsrequest);
 
-        const formattedItems = response.Items.map(item => ({
-            id: item.PK.S,
-            username: item.username.S,
-            accesslevel: item.accesslevel.S,
-            email: item.email.S,
-            createdAt: item.createdAt.S,
-        }));
-
-        res.json(formattedItems);
-    } catch (err) {
-        console.error('Error fetcwwhing users:', err);
-        res.status(500).send('Internal Server Error');
-    }
-});
-
-// Route for the homepage
+// to render the view of the index page
 app.get('/', (req, res) => {
-    res.send('Welcome to my Node.js app!');
-});
+    res.render('index');
+})
 
 // Start the server
 app.listen(PORT, () => {
