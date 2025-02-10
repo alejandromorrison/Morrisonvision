@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="/public/styles.css"> <!-- Optional CSS -->
+    <link rel="stylesheet" href="public/styles.css"> <!-- Optional CSS -->
 </head>
 <body>
-    <h1>Welcome to My Node.js App</h1>
-    <p>This is the homepage rendered with EJS.</p>
-    <a href="/formsreqs">Go to Forms Requests</a>
+    <%- include('partials/navbar') %>
 </body>
 </html>
