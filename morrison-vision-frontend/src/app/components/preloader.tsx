@@ -1,6 +1,7 @@
 "use client"; // Necesario para usar estados en Next.js App Router
 
 import { useState, useEffect } from "react";
+import Image from 'next/image';
 
 interface PreloaderProps {
   logo: string;
@@ -19,7 +20,7 @@ const Preloader: React.FC<PreloaderProps> = ({ logo }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-      <img src={logo} alt="Logo" className="w-150 h-60 animate-pulse" />
+      <Image src={logo} alt="Logo" className="w-150 h-60 animate-pulse" />
     </div>
   );
 };

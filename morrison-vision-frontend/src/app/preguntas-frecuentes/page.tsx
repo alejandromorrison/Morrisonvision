@@ -1,4 +1,3 @@
-import Contacto from '@/app/components/contact';
 import FAQ from '@/app/components/faq';
 import Map from '@/app/components/Map';
 
