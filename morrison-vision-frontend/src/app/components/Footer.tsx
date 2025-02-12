@@ -53,6 +53,7 @@ const Footer: React.FC = () => {
           <ul className="text-sm space-y-2">
             <li>📍 Gazcue, Santo Domingo, Dominican Republic</li>
             <li>📞 +1 (809) 534-1799</li>
+            <li>📞 Whatsapp +1 (849) 451-6540</li>
             <li>✉️ nihiloit@gmail.com</li>
           </ul>
         </div>

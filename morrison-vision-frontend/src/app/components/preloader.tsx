@@ -20,7 +20,7 @@ const Preloader: React.FC<PreloaderProps> = ({ logo }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-      <Image src={logo} alt="Logo" className="w-150 h-60 animate-pulse" />
+      <Image src={logo} width={600} height={150} alt="Logo" className="w-150 h-60 animate-pulse" />
     </div>
   );
 };
