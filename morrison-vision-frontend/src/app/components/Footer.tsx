@@ -20,10 +20,10 @@ const Footer: React.FC = () => {
           <h3 className="text-lg font-semibold mb-4">Links rapidos</h3>
           <ul className="text-sm space-y-2">
             <li><Link href="/" className="hover:text-gray-400">Pagina de Inicio</Link></li>
-            <li><Link href="/servicios" className="hover:text-gray-400">Servicios</Link></li>
-            <li><Link href="/nuestro-portafolio-inmersivo" className="hover:text-gray-400">Nuestro portafolio inmersivo</Link></li>
-            <li><Link href="/contacto" className="hover:text-gray-400">Formulario de contacto</Link></li>
-            <li><Link href="/contacto" className="hover:text-gray-400">Politicas de privacidad</Link></li>
+            <li><Link href="#" className="hover:text-gray-400">Servicios</Link></li>
+            <li><Link href="/galeria" className="hover:text-gray-400">galeria</Link></li>
+            <li><Link href="/formulario-contacto" className="hover:text-gray-400">Formulario de contacto</Link></li>
+            <li><Link href="/politicas-privacidad" className="hover:text-gray-400">Politicas de privacidad</Link></li>
           </ul>
         </div>
 
