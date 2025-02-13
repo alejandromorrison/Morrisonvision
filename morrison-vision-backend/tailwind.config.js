@@ -1,4 +1,8 @@
 module.exports = {
+  content: [
+    './views/**/*.ejs',
+    './public/**/*.js',
+  ],
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {

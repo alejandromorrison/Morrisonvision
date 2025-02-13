@@ -1,3 +1,4 @@
+<!-- views/layout.ejs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +7,11 @@
   <title><%= title %></title>
   <link rel="stylesheet" href="/css/output.css">
 </head>
-<body class="bg-gray-100">
+<body>
+  <%- include('navbar') %>  <!-- Include the navbar -->
 
-  <!-- Include Sidebar -->
-  <%- include('partials/sidebar') %>
+  <div class="content">
 
-  <!-- Main Content -->
-  <div class="ml-64 p-8">
-    <h1 class="text-3xl font-semibold"><%= title %></h1>
-    <p class="mt-4"><%= description %></p>
   </div>
-
 </body>
 </html>

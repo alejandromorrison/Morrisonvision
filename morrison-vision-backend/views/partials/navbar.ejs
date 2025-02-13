@@ -1,8 +1,43 @@
-<nav class="bg grat-800 text-white h-screen w-64 fixed">
-    <ul>
-        <li><a href="/">Pagina Principal</a></li>
-        <li><a href="/mi-cuenta">Mi cuenta</a></li>
-        <li><a href="galeria">Galeria</a></li>
-        <li><a href="formulario-contacto">formulario de contactos</a></li>
-    </ul>
-</nav>
+<!-- views/navbar.ejs -->
+<nav class="bg-blue-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo Section -->
+      <div class="text-white text-2xl font-bold">
+        <a href="/">MyWebsite</a>
+      </div>
+  
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex space-x-6">
+        <a href="/" class="text-white hover:text-gray-300">Pagina principal</a>
+        <a href="/mi-cuenta" class="text-white hover:text-gray-300">Mi cuenta</a>
+        <a href="/galeria" class="text-white hover:text-gray-300">Galeria</a>
+        <a href="/formulario-contacto" class="text-white hover:text-gray-300">Formulario de contacto</a>
+      </div>
+  
+      <!-- Mobile Hamburger Menu -->
+      <div class="md:hidden flex items-center space-x-2">
+        <button class="text-white" id="hamburger">
+          <span class="block w-6 h-0.5 bg-white mb-1"></span>
+          <span class="block w-6 h-0.5 bg-white mb-1"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Navigation Links (Hidden by default) -->
+    <div id="mobile-menu" class="md:hidden bg-blue-700 p-4 hidden">
+      <a href="/" class="block text-white py-2">Pagina Principal</a>
+      <a href="/mi-cuenta" class="block text-white py-2">Mi cuenta</a>
+      <a href="/galeria" class="block text-white py-2">Galeria</a>
+      <a href="/formulario-contacto" class="block text-white py-2">Formulario de contacto</a>
+    </div>
+  </nav>
+  
+  <script>
+    // JavaScript to toggle mobile menu
+    document.getElementById("hamburger").addEventListener("click", () => {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+  

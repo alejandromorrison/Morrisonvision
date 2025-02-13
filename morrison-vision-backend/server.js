@@ -20,7 +20,7 @@ app.use('/formsreqs', formsrequest);
 
 // to render the view of the index page
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', { title: 'Pagina Principal' });
 })
 
 // Start the server
